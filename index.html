@@ -4,15 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Online zpravodajství</title>
+    <!-- Připoj se dříve na doménu pro fonty -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- Načti styly pro font Montserrat -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
+    <!-- Načti náš styl -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Hlavička -->
     <header>
+      <!-- Navigace -->
       <nav>
         <h3>Online zpravodajství</h3>
         <ul>
@@ -25,21 +30,40 @@
           </li>
         </ul>
       </nav>
+      <!-- Formulář pro hledání -->
       <form action="/hledat" method="GET">
         <input type="search" />
         <button type="submit">Hledat</button>
       </form>
+      <!-- Odkazy na sociální sítě -->
       <ul class="social">
         <li><a href="">Facebook</a></li>
         <li><a href="">Twitter</a></li>
       </ul>
     </header>
+    <!-- Hlavní obsah dokumentu -->
     <main>
+      <!-- Uživatelská sekce -->
+      <aside>
+        <h3>Uživatelská sekce</h3>
+        <hr />
+        <!-- Formulář pro přihlášení -->
+        <form action="/login" method="POST">
+          <h5>Email</h5>
+          <input type="email" />
+          <h5>Heslo</h5>
+          <input type="password" />
+          <button type="submit">Přihlásit</button>
+        </form>
+      </aside>
+      <!-- Sekce s novinkami -->
       <section>
         <h2>Novinky</h2>
         <section>
-          <h3>Čerstvé zprávy z domova</h3>
+          <!-- Sekce s novinkami z domova -->
+          <h3>Čerstvé novinky z domova</h3>
           <div class="flex">
+            <!-- Jednotlivý článek -->
             <article>
               <h4>
                 Demonstrace proti vládním opatřením skončily předčasně. Bylo
@@ -58,6 +82,7 @@
               </p>
               <a href="">Číst dále</a>
             </article>
+            <!-- Jednotlivý článek -->
             <article>
               <h4>
                 ‚Pokud při Úřadu vlády vznikne paralelní ministr, rezignuji,‘
@@ -76,6 +101,7 @@
               </p>
               <a href="">Číst dále</a>
             </article>
+            <!-- Jednotlivý článek -->
             <article>
               <h4>
                 Policie otočila u Karviné na hranici okresu několik autobusů
@@ -93,9 +119,11 @@
             </article>
           </div>
         </section>
+        <!-- Sekce s novinkami ze světa -->
         <section>
           <h3>Svět</h3>
           <div class="flex">
+            <!-- Jednotlivý článek -->
             <article>
               <h4>
                 Izrael rozvolňuje opatření. Do restaurací mohou jen naočkovaní,
@@ -115,6 +143,7 @@
               </p>
               <a href="">Číst dále</a>
             </article>
+            <!-- Jednotlivý článek -->
             <article>
               <h4>
                 Desítky tisíc lidí v Barmě opět protestují proti vojenské juntě.
@@ -132,6 +161,7 @@
               </p>
               <a href="">Číst dále</a>
             </article>
+            <!-- Jednotlivý článek -->
             <article>
               <h4>
                 Prvních 850 tisíc pozvánek v sobotu, další v pondělí. V Anglii
@@ -150,9 +180,11 @@
             </article>
           </div>
         </section>
+        <!-- Sekce s novinkami ze sportu -->
         <section>
           <h3>Sport</h3>
           <div class="flex">
+            <!-- Jednotlivý článek -->
             <article>
               <h4>
                 Sparta doma srovnala, Liberec bojuje na dálku s Plzní o
@@ -168,6 +200,8 @@
               </p>
               <a href="">Číst dále</a>
             </article>
+
+            <!-- Jednotlivý článek -->
             <article>
               <h4>
                 Krčmář doma zajel parádní stíhačku, zlepšil se o pětadvacet míst
@@ -185,6 +219,8 @@
               </p>
               <a href="">Číst dále</a>
             </article>
+
+            <!-- Jednotlivý článek -->
             <article>
               <h4>
                 Washingtonský rapl spravedlnosti neunikne! Jaký trest dostal?
@@ -204,20 +240,12 @@
           </div>
         </section>
       </section>
-      <aside>
-        <h3>Zprávy</h3>
-        <hr />
-        <ul>
-          <li><a href="">První item</a></li>
-          <li><a href="">Druhý item</a></li>
-          <li><a href="">Třetí item</a></li>
-          <li><a href="">Čtvrtý item</a></li>
-          <li><a href="">Pátý item</a></li>
-        </ul>
-      </aside>
     </main>
+    <!-- Patička -->
     <footer>
+      <!-- Hlavní patička s dalšími rubrikami -->
       <div class="footer">
+        <!-- Sekce s rubrikou -->
         <section>
           <h4>Zábava a celebrity</h4>
           <ul>
@@ -226,6 +254,7 @@
             <li><a href="">MS v biatlonu 2021</a></li>
           </ul>
         </section>
+        <!-- Sekce s rubrikou -->
         <section>
           <h4>Auto-moto</h4>
           <ul>
@@ -234,6 +263,7 @@
             <li><a href="">Dakar 2021</a></li>
           </ul>
         </section>
+        <!-- Sekce s rubrikou -->
         <section>
           <h4>Věda a technika</h4>
           <ul>
@@ -242,6 +272,7 @@
             <li><a href="">Počítačová poradna</a></li>
           </ul>
         </section>
+        <!-- Sekce s rubrikou -->
         <section>
           <h4>Ekonomika a byznys</h4>
           <ul>
@@ -251,6 +282,7 @@
           </ul>
         </section>
       </div>
+      <!-- Patička na copyright -->
       <div class="copyright">
         <span>© 2021 <a href="/">Online zpravodajství</a></span>
       </div>
