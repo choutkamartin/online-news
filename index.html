@@ -17,16 +17,16 @@
   <body>
     <!-- Hlavička -->
     <header>
+      <h1>Online zpravodajství</h1>
       <!-- Navigace -->
       <nav>
-        <h3>Online zpravodajství</h3>
         <ul>
-          <li><a href="">Doma</a></li>
-          <li><a href="">Svět</a></li>
-          <li><a href="">Sport</a></li>
-          <li><a href="">Politika</a></li>
+          <li><a href="#doma">Doma</a></li>
+          <li><a href="#svet">Svět</a></li>
+          <li><a href="#sport">Sport</a></li>
+          <li><a href="#politika">Politika</a></li>
           <li>
-            <a href=""><strong>Koronavirus aktuálně</strong></a>
+            <a href="#koronavirus"><strong>Koronavirus aktuálně</strong></a>
           </li>
         </ul>
       </nav>
@@ -41,201 +41,227 @@
         <li><a href="">Twitter</a></li>
       </ul>
     </header>
-    <!-- Hlavní obsah dokumentu -->
+    <aside>
+      <h2>Uživatelská sekce</h2>
+      <!-- Formulář pro přihlášení -->
+      <form action="/login" method="POST">
+        <label for="email">Email</label>
+        <input type="email" id="email" />
+        <label for="password">Heslo</label>
+        <input type="password" id="password" />
+        <button type="submit">Přihlásit</button>
+      </form>
+    </aside>
     <main>
-      <!-- Uživatelská sekce -->
-      <aside>
-        <h3>Uživatelská sekce</h3>
-        <hr />
-        <!-- Formulář pro přihlášení -->
-        <form action="/login" method="POST">
-          <h5>Email</h5>
-          <input type="email" />
-          <h5>Heslo</h5>
-          <input type="password" />
-          <button type="submit">Přihlásit</button>
-        </form>
-      </aside>
       <!-- Sekce s novinkami -->
       <section>
         <h2>Novinky</h2>
-        <section>
+        <section id="doma">
           <!-- Sekce s novinkami z domova -->
           <h3>Čerstvé novinky z domova</h3>
           <div class="flex">
             <!-- Jednotlivý článek -->
             <article>
-              <h4>
-                Demonstrace proti vládním opatřením skončily předčasně. Bylo
-                překročeno povolené množství lidí.
-              </h4>
-              <hr />
-              <h5><a href="">Autor</a></h5>
-              <p>
-                Demonstrace proti vládním protiepidemickým opatřením, kterou v
-                neděli pořádala iniciativa Chcípl PES na pražském Staroměstském
-                náměstí, skončila předčasně krátce po zahájení ve 14.00.
-                Policisté shromáždění ukončili a vyzvali účastníky, aby se
-                přesunuli na jiné místo. Na náměstí policisté pustili jen 100
-                povolených účastníků. Kvůli přestupkům policie několik lidí
-                zadržela, řekl Radiožurnálu policejní mluvčí Jan Daněk.
-              </p>
-              <a href="">Číst dále</a>
+              <div>
+                <h4>
+                  Demonstrace proti vládním opatřením skončily předčasně. Bylo
+                  překročeno povolené množství lidí.
+                </h4>
+                <p>
+                  Demonstrace proti vládním protiepidemickým opatřením, kterou v
+                  neděli pořádala iniciativa Chcípl PES na pražském
+                  Staroměstském náměstí, skončila předčasně krátce po zahájení
+                  ve 14.00. Policisté shromáždění ukončili a vyzvali účastníky,
+                  aby se přesunuli na jiné místo. Na náměstí policisté pustili
+                  jen 100 povolených účastníků. Kvůli přestupkům policie několik
+                  lidí zadržela, řekl Radiožurnálu policejní mluvčí Jan Daněk.
+                </p>
+              </div>
+              <div>
+                <a href="">Číst dále</a>
+                <a href="">Autor</a>
+              </div>
             </article>
             <!-- Jednotlivý článek -->
             <article>
-              <h4>
-                ‚Pokud při Úřadu vlády vznikne paralelní ministr, rezignuji,‘
-                oznámil Blatný
-              </h4>
-              <hr />
-              <h5><a href="">Autor</a></h5>
-              <p>
-                Ministr zdravotnictví Jan Blatný (za ANO) by rezignoval na svou
-                funkci ministra zdravotnictví, pokud by se poradní skupina s
-                epidemiologem Petrem Smejkalem měla stát paralelním
-                ministerstvem zdravotnictví při Úřadu vlády. Blatný ale věří, že
-                se to nestane a že skupina mu bude spíše poskytovat nezávislá
-                odborná stanoviska. Uvedl to v neděli v Otázkách Václava
-                Moravce.
-              </p>
-              <a href="">Číst dále</a>
+              <div>
+                <h4>
+                  Pokud při Úřadu vlády vznikne paralelní ministr, rezignuji,‘
+                  oznámil Blatný
+                </h4>
+                <p>
+                  Ministr zdravotnictví Jan Blatný (za ANO) by rezignoval na
+                  svou funkci ministra zdravotnictví, pokud by se poradní
+                  skupina s epidemiologem Petrem Smejkalem měla stát paralelním
+                  ministerstvem zdravotnictví při Úřadu vlády. Blatný ale věří,
+                  že se to nestane a že skupina mu bude spíše poskytovat
+                  nezávislá odborná stanoviska. Uvedl to v neděli v Otázkách
+                  Václava Moravce.
+                </p>
+              </div>
+              <div>
+                <a href="">Číst dále</a>
+                <a href="">Autor</a>
+              </div>
             </article>
             <!-- Jednotlivý článek -->
             <article>
-              <h4>
-                Policie otočila u Karviné na hranici okresu několik autobusů
-                mířících na demonstraci do Prahy
-              </h4>
-              <hr />
-              <h5><a href="">Autor</a></h5>
-              <p>
-                Policie nepustila za hranice okresu Karviná několik autobusů,
-                které mířily na demonstraci proti vládním opatřením do Prahy.
-                Pokutu na místě nikdo nedostal, policie případ předá do
-                správního řízení. Napsal to server iDNES.cz.
-              </p>
-              <a href="">Číst dále</a>
+              <div>
+                <h4>
+                  Policie otočila u Karviné na hranici okresu několik autobusů
+                  mířících na demonstraci do Prahy
+                </h4>
+                <p>
+                  Policie nepustila za hranice okresu Karviná několik autobusů,
+                  které mířily na demonstraci proti vládním opatřením do Prahy.
+                  Pokutu na místě nikdo nedostal, policie případ předá do
+                  správního řízení. Napsal to server iDNES.cz.
+                </p>
+              </div>
+              <div>
+                <a href="">Číst dále</a>
+                <a href="">Autor</a>
+              </div>
             </article>
           </div>
         </section>
         <!-- Sekce s novinkami ze světa -->
-        <section>
+        <section id="svet">
           <h3>Svět</h3>
           <div class="flex">
             <!-- Jednotlivý článek -->
             <article>
-              <h4>
-                Izrael rozvolňuje opatření. Do restaurací mohou jen naočkovaní,
-                bez vakcíny lze pouze na zahrádky.
-              </h4>
-              <hr />
-              <h5><a href="">Autor</a></h5>
-              <p>
-                Izrael v neděli po téměř dvou měsících otevřel hranice a zmírnil
-                řadu protiepidemických opatření. Změny schválila vláda,
-                informovala agentura AFP. Pro očkované budou znovu otevřeny
-                interiéry restaurací, v oblastech s nízkým výskytem nákazy začne
-                prezenční výuka. Obnovena byla také osobní doprava na Ben
-                Gurionově letišti. Uvolnění umožnila úspěšná očkovací kampaň, v
-                rámci které dostala alespoň jednu dávku vakcíny už více než
-                polovina obyvatelstva.
-              </p>
-              <a href="">Číst dále</a>
+              <div>
+                <h4>
+                  Izrael rozvolňuje opatření. Do restaurací mohou jen
+                  naočkovaní, bez vakcíny lze pouze na zahrádky.
+                </h4>
+                <p>
+                  Izrael v neděli po téměř dvou měsících otevřel hranice a
+                  zmírnil řadu protiepidemických opatření. Změny schválila
+                  vláda, informovala agentura AFP. Pro očkované budou znovu
+                  otevřeny interiéry restaurací, v oblastech s nízkým výskytem
+                  nákazy začne prezenční výuka. Obnovena byla také osobní
+                  doprava na Ben Gurionově letišti. Uvolnění umožnila úspěšná
+                  očkovací kampaň, v rámci které dostala alespoň jednu dávku
+                  vakcíny už více než polovina obyvatelstva.
+                </p>
+              </div>
+              <div>
+                <a href="">Číst dále</a>
+                <a href="">Autor</a>
+              </div>
             </article>
             <!-- Jednotlivý článek -->
             <article>
-              <h4>
-                Desítky tisíc lidí v Barmě opět protestují proti vojenské juntě.
-                Policie provedla razie v Rangúnu.
-              </h4>
-              <hr />
-              <h5><a href="">Autor</a></h5>
-              <p>
-                Desítky tisíc lidí vyšly v neděli do ulic barmských měst znovu
-                protestovat proti vojenské juntě, která před víc než měsícem
-                převzala moc v zemi. Demonstrace se podle agentury Reuters
-                konají, přestože bezpečnostní síly v noci na neděli provedly v
-                největším barmském městě Rangúnu razie proti organizátorům
-                protestů a opozičním aktivistům.
-              </p>
-              <a href="">Číst dále</a>
+              <div>
+                <h4>
+                  Desítky tisíc lidí v Barmě opět protestují proti vojenské
+                  juntě. Policie provedla razie v Rangúnu.
+                </h4>
+                <p>
+                  Desítky tisíc lidí vyšly v neděli do ulic barmských měst znovu
+                  protestovat proti vojenské juntě, která před víc než měsícem
+                  převzala moc v zemi. Demonstrace se podle agentury Reuters
+                  konají, přestože bezpečnostní síly v noci na neděli provedly v
+                  největším barmském městě Rangúnu razie proti organizátorům
+                  protestů a opozičním aktivistům.
+                </p>
+              </div>
+              <div>
+                <a href="">Číst dále</a>
+                <a href="">Autor</a>
+              </div>
             </article>
             <!-- Jednotlivý článek -->
             <article>
-              <h4>
-                Prvních 850 tisíc pozvánek v sobotu, další v pondělí. V Anglii
-                zvou k očkování proti koronaviru padesátníky.
-              </h4>
-              <hr />
-              <h5><a href="">Autor</a></h5>
-              <p>
-                Anglie začala zvát na očkování proti covidu-19 osoby ve věku 56
-                až 59 let. Systém veřejného zdravotnictví NHS rozeslal v sobotu
-                850 000 pozvánek a dalších 850 000 dopisů pošle v pondělí,
-                uvedla agentura Reuters. Jednu dávku vakcíny v Anglii dostalo
-                zatím kolem 18 milionů lidí.
-              </p>
-              <a href="">Číst dále</a>
+              <div>
+                <h4>
+                  Prvních 850 tisíc pozvánek v sobotu, další v pondělí. V Anglii
+                  zvou k očkování proti koronaviru padesátníky.
+                </h4>
+                <p>
+                  Anglie začala zvát na očkování proti covidu-19 osoby ve věku
+                  56 až 59 let. Systém veřejného zdravotnictví NHS rozeslal v
+                  sobotu 850 000 pozvánek a dalších 850 000 dopisů pošle v
+                  pondělí, uvedla agentura Reuters. Jednu dávku vakcíny v Anglii
+                  dostalo zatím kolem 18 milionů lidí.
+                </p>
+              </div>
+              <div>
+                <a href="">Číst dále</a>
+                <a href="">Autor</a>
+              </div>
             </article>
           </div>
         </section>
         <!-- Sekce s novinkami ze sportu -->
-        <section>
+        <section id="sport">
           <h3>Sport</h3>
           <div class="flex">
             <!-- Jednotlivý článek -->
             <article>
-              <h4>
-                Sparta doma srovnala, Liberec bojuje na dálku s Plzní o
-                čtvrtfinále
-              </h4>
-              <hr />
-              <h5><a href="">Autor</a></h5>
-              <p>
-                Zřejmě nedjůležitější zápas závěrečného kola se odehraje ve
-                Vítkovicích. Ty proti Liberci budou hájit osmé místo před Brnem,
-                Karlovými Vary a Litvínovem, aby mohly předkolo play off začínat
-                doma. Liberec zase bojuje o přímý postup do čtvrtfinále.
-              </p>
-              <a href="">Číst dále</a>
+              <div>
+                <h4>
+                  Sparta doma srovnala, Liberec bojuje na dálku s Plzní o
+                  čtvrtfinále
+                </h4>
+                <p>
+                  Zřejmě nedjůležitější zápas závěrečného kola se odehraje ve
+                  Vítkovicích. Ty proti Liberci budou hájit osmé místo před
+                  Brnem, Karlovými Vary a Litvínovem, aby mohly předkolo play
+                  off začínat doma. Liberec zase bojuje o přímý postup do
+                  čtvrtfinále.
+                </p>
+              </div>
+              <div>
+                <a href="">Číst dále</a>
+                <a href="">Autor</a>
+              </div>
             </article>
 
             <!-- Jednotlivý článek -->
             <article>
-              <h4>
-                Krčmář doma zajel parádní stíhačku, zlepšil se o pětadvacet míst
-              </h4>
-              <hr />
-              <h5><a href="">Autor</a></h5>
-              <p>
-                Sedmý díl Světového poháru biatlonistů se povedlo Michal
-                Krčmářovi zakončit velmi pěkně. Při stíhacím závodě doma v Novém
-                Městě na Moravě se zlepšil o pětadvacet míst, když všechny čtyři
-                položky odstřílel čistě a patřil k elitě v běhu. Nakonec z toho
-                byla 14. příčka v cíli, kde dva nejlepší byli norští sourozenci.
-                Vítězství slavil Tarjei Boe, žluté číslo si i druhým místem
-                upevnil lídr seriálu Johannes Thingnes Boe.
-              </p>
-              <a href="">Číst dále</a>
+              <div>
+                <h4>
+                  Krčmář doma zajel parádní stíhačku, zlepšil se o pětadvacet
+                  míst
+                </h4>
+                <p>
+                  Sedmý díl Světového poháru biatlonistů se povedlo Michal
+                  Krčmářovi zakončit velmi pěkně. Při stíhacím závodě doma v
+                  Novém Městě na Moravě se zlepšil o pětadvacet míst, když
+                  všechny čtyři položky odstřílel čistě a patřil k elitě v běhu.
+                  Nakonec z toho byla 14. příčka v cíli, kde dva nejlepší byli
+                  norští sourozenci. Vítězství slavil Tarjei Boe, žluté číslo si
+                  i druhým místem upevnil lídr seriálu Johannes Thingnes Boe.
+                </p>
+              </div>
+              <div>
+                <a href="">Číst dále</a>
+                <a href="">Autor</a>
+              </div>
             </article>
 
             <!-- Jednotlivý článek -->
             <article>
-              <h4>
-                Washingtonský rapl spravedlnosti neunikne! Jaký trest dostal?
-              </h4>
-              <hr />
-              <h5><a href="">Autor</a></h5>
-              <p>
-                Hokejový útočník Tom Wilson z Washingtonu dostal v NHL
-                sedmizápasový trest za faul na obránce Bostonu Brandona Carla v
-                pátečním utkání. Šestadvacetiletý Wilson, pro nějž je to již
-                pátý trest od září 2017, ale první od začátku sezony 2018/19,
-                přijde kvůli zastavené činnosti o 311.781 dolarů (6,9 mil.
-                korun).
-              </p>
-              <a href="">Číst dále</a>
+              <div>
+                <h4>
+                  Washingtonský rapl spravedlnosti neunikne! Jaký trest dostal?
+                </h4>
+                <p>
+                  Hokejový útočník Tom Wilson z Washingtonu dostal v NHL
+                  sedmizápasový trest za faul na obránce Bostonu Brandona Carla
+                  v pátečním utkání. Šestadvacetiletý Wilson, pro nějž je to již
+                  pátý trest od září 2017, ale první od začátku sezony 2018/19,
+                  přijde kvůli zastavené činnosti o 311.781 dolarů (6,9 mil.
+                  korun).
+                </p>
+              </div>
+              <div>
+                <a href="">Číst dále</a>
+                <a href="">Autor</a>
+              </div>
             </article>
           </div>
         </section>
@@ -244,7 +270,7 @@
     <!-- Patička -->
     <footer>
       <!-- Hlavní patička s dalšími rubrikami -->
-      <div class="footer">
+      <div id="footer-top">
         <!-- Sekce s rubrikou -->
         <section>
           <h4>Zábava a celebrity</h4>
@@ -283,7 +309,7 @@
         </section>
       </div>
       <!-- Patička na copyright -->
-      <div class="copyright">
+      <div id="copyright-footer">
         <span>© 2021 <a href="/">Online zpravodajství</a></span>
       </div>
     </footer>
